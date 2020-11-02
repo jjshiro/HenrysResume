@@ -12,19 +12,40 @@ html {
     background-color: rgb(114, 114, 114);
 }
 
-.main {
-    width: 60%;
+.main, .nav {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 450px;
     margin: 0 auto;
+}
+
+.main {
     background-color: rgb(233, 233, 233);
-    padding: 2%;
+    padding: 1% 2%;
+}
+
+.nav {
+    padding: 10px 40px;
+    background-color: #e7b1b3;
+}
+
+.nav ul {
+    text-align: right;
+    font-style: italic;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.nav ul li span {
+    font-weight: 600;
 }
 
 .title {
     padding: 0 40px;
-}
-
-.title p {
-    font-size: 0.75rem;
 }
 
 .title h2 {
@@ -40,13 +61,15 @@ html {
 
 .profile-info, .profile-image {
     width: 50%;
-    min-height: 100%;
+    min-height: 80%;
+    margin: auto 0;
 }
 
 .profile-image {
     overflow: hidden;
     text-align: right;
-    padding-right: 70px;
+    padding-right: 50px;
+    padding-left: 40px;
 }
 
 .profile-image img {
@@ -58,12 +81,14 @@ html {
     border-radius: 100%;
 }
 
+.profile-info {
+    padding-right: 40px;
+}
+
 .profile-info ul {
     list-style: none;
     line-height: 1.75rem;
     font-size: 1.3rem;
-    /*height: 100%;*/
-    /*padding-top: 10%;*/
 }
 
 .profile-info span {
@@ -71,7 +96,7 @@ html {
 }
 
 .tagline {
-    padding: 5% 0;
+    padding: 20px 40px;
     text-align: center;
     font-family: "Shadows Into Light Two", serif;
     font-size: 2.5rem;
@@ -85,9 +110,9 @@ html {
 
 .section h3 {
     color: #333333;
-    background-color: #e7b1b3;
     padding: 1% 0 1% 2%;
     border-radius: 1rem;
+    background-color: #e7b1b3;
 }
 
 .section ul {
@@ -115,4 +140,120 @@ html {
 .section p span {
     font-size: 0.75rem;
     font-style: italic;
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 850px) {
+    .tagline {
+        font-size: 4vw;
+} 
+}
+
+@media only screen and (max-width: 970px) and (min-width: 850px) {
+    .profile-info ul li{
+        font-size: 2.25vw;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 770px) {
+    .tagline {
+        font-size: 3.35rem;
+}
+}
+
+@media only screen and (max-width: 730px) {
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile-image {
+        min-width: 80%;
+        margin: 10px auto;
+    }
+
+    .profile-info {
+        width: 100%;
+        padding: 0 0 0 10%;
+    }
+}
+
+@media only screen and (max-width: 710px) { 
+    .nav {
+        padding: 10px 5px;
+    }
+
+    .nav ul {
+        text-align: center;
+    }
+
+    .nav ul li {
+        padding-right: 5px;
+        font-size: 2.8vw;
+    }
+
+    .profile-info ul li {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .section li, .section p, .quote {
+        font-size: 1.2rem;
+    }
+
+    .quote {
+        text-align: center;
+    }
+
+    .section li {
+        margin-bottom: 10px;
+    }
+
+    .section p span {
+        font-size: 1rem;
+    }
+
+    .section h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .section h3 {
+        padding: 5px 15px;
+    }
+
+    .main, .nav {
+        min-width: 300px;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+
+    .profile-image img {
+        min-width: 250px;
+    }
+
+    .nav ul li {
+        font-size: 1rem;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .profile-info {
+        width: 100%;
+        padding: 0 0 0 5%;
+    }
+
+    .section ul {
+        padding-left: 20px;
+    }
+
+    .section p {
+        padding: 0;
+    }
 }
