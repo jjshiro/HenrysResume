@@ -149,7 +149,7 @@ html {
 }
 
 @media only screen and (max-width: 950px) and (min-width: 730px) {
-    .profile-info ul li{
+    .profile-info ul li {
         font-size: 2.3vw;
         padding-left: 10px;
     }
@@ -157,10 +157,6 @@ html {
     .tagline {
         font-size: 7.5vw;
     }
-}
-
-@media only screen and (max-width: 850px) and (min-width: 770px) {
-    
 }
 
 @media only screen and (max-width: 730px) {
